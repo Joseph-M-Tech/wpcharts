@@ -1,0 +1,19 @@
+{
+  "name": "wpcharts",
+  "version": "1.0.0",
+  "description": "A Job posting platform made by WordPress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.4.0"
+  },
+  "dependencies": {
+    "recharts": "^2.6.2"
+  }
+}

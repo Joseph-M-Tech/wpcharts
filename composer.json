@@ -1,0 +1,19 @@
+
+{
+    "name": "python/wpcharts",
+    "description": "A Job posting platform made by WordPress",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "python\\wpcharts\\": "includes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "joseph",
+            "email": "joseph@gmail.com"
+        }
+    ],
+    "require": {}
+}
