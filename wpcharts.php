@@ -1,25 +1,22 @@
 <?php
 /**
- * Plugin Name:       wp charts
- * Description:       A Job posting platform made by WordPress.
+ * Plugin Name:       WP charts
+ * Description:       A data visualization WordPress widget Plugin using Recharts, ReactJs and REST API.
+ * Author:            Joseph Mwangi
+ * Author URI:        https://#
+ * Version:           0.1.0
  * Requires at least: 5.8
  * Requires PHP:      7.0
- * Version:           0.1.0
- * Author:            Maniruzzaman Akash
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       wpcharts
  */
 
  /**
-  * Init Admin Menu.
+  * Init Admin  widget.
   *
   * @return void
   */
-// add_action( 'admin_menu', 'wpcharts_init_menu' );
-//  function wpcharts_init_menu() {
-//      add_menu_page( __( 'Job Place', 'wpcharts'), __( 'Job Place', 'wpcharts'), 'manage_options', 'wpcharts', 'wpcharts_admin_page', 'dashicons-admin-post', '2.1' );
-//  }
 
  function wpcharts_init_menu () {
     wp_add_dashboard_widget( 
@@ -27,22 +24,18 @@
         'Recharts', //widget_name
         'wpcharts',//callback function 
 
-        // 'Recharts_Dashboard_Widget',//callback function 
-        // $control_callback,
-        // $callback_args
     );
 }
 add_action( 'wp_dashboard_setup', 'wpcharts_init_menu' );
  
  /**
-  * Init Admin Page.
+  * Init Admin  Home widget display.
   *
   * @return void
   */
  function wpcharts_admin_page() {
      require_once plugin_dir_path( __FILE__ ) . 'templates/app.php';
  }
-
 
  add_action( 'admin_enqueue_scripts', 'wpcharts_admin_enqueue_scripts' );
 

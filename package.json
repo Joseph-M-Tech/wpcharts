@@ -1,7 +1,7 @@
 {
   "name": "wpcharts",
   "version": "1.0.0",
-  "description": "A Job posting platform made by WordPress",
+  "description": "A data visualization WordPress widget Plugin using Recharts, ReactJs and REST API.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

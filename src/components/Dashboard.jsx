@@ -18,7 +18,7 @@ const Dashboard = () => {
     return (
         <div className='dashboard'>
             <div className="card">
-                <h3>Recharts Dashboard</h3>
+                <h3>Recharts Dashboard Widget</h3>
                 <Chart data={data} />
             </div>
         </div>
